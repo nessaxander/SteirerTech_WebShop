@@ -1,6 +1,3 @@
-# SteirerTech_WebShop
-
-
 # SteirerTech Webshop
 
 ## Frontend
