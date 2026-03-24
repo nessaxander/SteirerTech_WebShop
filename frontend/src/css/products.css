@@ -1,0 +1,14 @@
+#filteredProducts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Produkte pro Zeile */
+    gap: 16px;
+    padding: 16px;
+}
+
+#Product {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+}

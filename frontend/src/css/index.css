@@ -1,0 +1,144 @@
+/* Reset & Basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: white; /* dunkles Blau / Anthrazit ähnlich Steirertech */
+    color: grey;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Buttons */
+.button, button, .btn {
+    background-color: #4CAF50; /* ein frisches, technisches Grün als Akzent */
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover, button:hover, .btn:hover {
+    background-color: #45a049;
+}
+
+/* Hauptbereich */
+main {
+    padding: 2rem;
+}
+
+#stLogo {
+    width: 20%;
+    height: 20%;
+}
+#greenBar {
+    background-color: #00833E;
+    height: 40px;
+    width: 100%;
+}
+
+/* Karten (z. B. Leistung oder Referenz) */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    color: #1a2634; /* dunkles Blau / Anthrazit */
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2634;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
